@@ -81,10 +81,6 @@ function App() {
       </div>
 
       <h3>Result: {result !== null ? result : "No results"}</h3>
-
-      <div>
-        <TodoList />
-      </div>
     </div>
   );
 }
