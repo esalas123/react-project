@@ -1,0 +1,207 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arimo', sans-serif;
+}
+
+body {
+  background: #c6dcfc;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #cfe9f8;
+}
+
+.app-container {
+  width: 100%;
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+  border-radius: 15px;
+  backdrop-filter: blur(10px); 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.counter-section, .calculator-section {
+  margin-bottom: 30px;
+}
+
+/* Title*/
+.counter-title, .calc-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.result {
+  font-size: 1.5rem;
+  color: #333333;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+
+/* button */
+.increment-btn, .decrement-btn, .reset-btn, .calc-btn {
+  background: #619252;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  font-size: 1.5rem;
+  padding: 18px 36px;
+  margin: 15px;
+  cursor: pointer;
+  box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.2), -6px -6px 8px rgba(255, 255, 255, 0.3);
+  transition: all 0.2s ease-in-out;
+}
+
+.increment-btn:hover, .decrement-btn:hover, .reset-btn:hover, .calc-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 10px 10px 14px rgba(0, 0, 0, 0.3), -10px -10px 14px rgba(255, 255, 255, 0.4);
+}
+
+.increment-btn:active, .decrement-btn:active, .reset-btn:active, .calc-btn:active {
+  transform: translateY(3px);
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2), -3px -3px 6px rgba(255, 255, 255, 0.3);
+}
+
+.reset-btn {
+  background: #f3f18c;
+  font-size: 1.5rem;
+  color: #1d1d1d
+}
+
+.add-btn {
+  background: #6aa4fb;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.3);
+}
+
+.subtract-btn {
+  background: #6aa4fb;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.3);
+}
+
+.multiply-btn {
+  background: #6aa4fb;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.3);
+}
+
+.divide-btn {
+  background: #6aa4fb;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.3);
+}
+
+
+
+/* Input */
+.calc-input {
+  width: 250px;
+  padding: 12px;
+  margin: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: all 0.2s ease-in-out;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.calc-input:focus {
+  border-color: #6a82fb;
+  outline: none;
+  box-shadow: 0 0 5px rgba(106, 130, 251, 0.5);
+}
+
+.inputs {
+  margin-bottom: 20px;
+}
+
+button:focus, input:focus {
+  outline: none;
+}
+
+/* Calculator and Counter Section */  
+h1, h2, h3 {
+  font-family: 'Arial', sans-serif;
+  color: #353434;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.remove-input-btn {
+  color: white;
+  background-color: rgb(250, 151, 151);
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin-left: 5px;
+  font-size: 1rem;
+  border-radius: 3px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.remove-input-btn:hover {
+  background-color: rgb(153, 78, 78);
+}
+
+/* todo */
+.todo-container {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 2px solid #333;
+  border-radius: 0;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fdf3ce;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 2px solid #333;
+  border-radius: 0;
+  margin-bottom: 5px;
+  background: white;
+}
+
+li.completed {
+  background-color: #d4edda;
+  text-decoration: line-through;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+} 
+
+/* delete */
+
+.delete-btn {
+  margin-left: auto; 
+  background-color: rgb(250, 151, 151);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 1rem;
+  border-radius: 3px;
+}
+
+.delete-btn:hover {
+  background-color: rgb(153, 78, 78);
+}
